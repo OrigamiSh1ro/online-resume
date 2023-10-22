@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="icon" type="image/icon" href="favicon.ico"/>
+    <title>
+    Gavierez IPT 101
+    </title>
+    
+   
+   
+</head>
+    <body>
+        <style> 
+            #myImg {
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            
+            #myImg:hover {opacity: 0.7;}
+            
+            
+            .modal {
+                display: none; 
+                position: fixed; 
+                z-index: 1; 
+                padding-top: 100px; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height: 100%; 
+                overflow: auto; 
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.9); 
+            }
+            
+            
+            .modal-content {
+                margin: auto;
+                margin-top: 10%;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+            }
+            
+           
+            #caption {
+                margin: auto;
+                display: block;
+                width: 80%;
+                max-width: 700px;
+                text-align: center;
+                color: #ccc;
+                padding: 10px 0;
+                height: 150px;
+            }
+            
+           
+            .modal-content, #caption {  
+                -webkit-animation-name: zoom;
+                -webkit-animation-duration: 0.6s;
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+            
+            @-webkit-keyframes zoom {
+                from {-webkit-transform:scale(0)} 
+                to {-webkit-transform:scale(1)}
+            }
+            
+            @keyframes zoom {
+                from {transform:scale(0)} 
+                to {transform:scale(1)}
+            }
+            
+            
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+                margin-top: 10%;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+      
+            @media only screen and (max-width: 700px){
+                .modal-content {
+                width: 100%;
+                }
+            }
+    </style>     
+
+        
+        <div class="MainBody">  
+            <div class="header">  
+                <h1>
+                    <img class="img" src="logo.jpg" height="50" width="50" >
+                    <strong> > _Dalubhasaan ng Lungsod ng Lucena ... </strong>
+                </h1>  
+                
+                <br><br>
+                <h2><a href="index.html" 
+                    class="w3-button w3-hover-blue w3-large w3-xlarge w3-yellow link" 
+                    target="_self">Home</a>
+
+                    <a href="about_me.html" 
+                    class="w3-button w3-hover-blue w3-large w3-xlarge w3-yellow link" 
+                    target="_self">About Me</a>
+                    
+                    <a href="educational_background.html" 
+                    class="w3-button w3-hover-blue w3-large w3-xlarge w3-yellow link" 
+                    target="_self">Educational Background</a>
+                    
+                    <a href= "contacts.html" 
+                    class="w3-button w3-hover-blue w3-large w3-xlarge w3-yellow link" 
+                    target="_self">Contacts</a>     </h2>
+                </h2>
+      
+            </div>
+
+            
+            <div class="center" > 
+                  <br>  <br>  <br>  <br>
+                <p style="text-align:justify"> > _My name is Zen Arthur Alcala Gavierez of BSIT 2C, I am just a kid who is trying to learn Programming, Web Development, and Cyber Security.
+                    I also do some Reading, preferably Light Novels and Manga. ... <br><br>
+                    > _Two of my all time favourite books would be Violet Evergarden and The Beginning After the End. ... <br><br>
+                    > _Besides that I have 7 other series yet to be started which in total are around 45 Volumes. ...
+                </p> 
+                
+                
+                <div class="container" justify="center">
+                    <div class="image-container">
+                        <center>    
+                                <img class="image-container1"  src="Violet_Evergarden_Volume_1.jpg" width="200" height="300" >
+                                <img class="image-container2"  src="The_Beginning_After_the_End_Volume_7.jpg" width="200" height="300" >
+                        </center>
+                    </div>        
+                </div> 
+
+
+                <p>> _Then i have some photography i do as a side hobby for when i get the chance to encapture a memory im very fond of.
+                    such as animals i encounter, events i attend to throughout the years and foods i find amusing to look at. <br><br>
+                    > _I would use a ok resolution phone camera for taking pictures and now i am using a better camera for this job.
+                </p>
+                <div class="row" >
+                    <div class="column">
+                        <div class="img-hover-zoom" align="left">
+                            <img src="img1.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img2.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img3.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img4.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                    </div>
+            
+                    <div class="column" align="center">
+                        
+                        <div class="img-hover-zoom">
+                            <img src="img5.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img6.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img7.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                       
+                    </div>
+            
+                    <div class="column" align="center">
+                        
+                        <div class="img-hover-zoom">
+                            <img src="img9.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom" >
+                            <img src="img10.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img11.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                        <div class="img-hover-zoom">
+                            <img src="img12.jpg" id="myImg" style="width:100%" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>  
+            
+              
+            </div>
+          
+
+
+        </div>  
+        
+        <div id="myModal" class="modal" >
+            
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+          
+        <script>
+
+            var modal = document.getElementById("myModal");
+            
+            
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+           
+            var span = document.getElementsByClassName("close")[0];
+            
+            
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
